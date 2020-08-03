@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flights delay Prediction</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>MONTH</h2>
+    <input class="month"  type="email" id="uimonth" class="floatLabel" name="Month" value="00">
+
+    <h2>DAY</h2>
+    <input class="day"  type="email" id="uiday" class="floatLabel" name="Day" value="00">
+
+    </div>
+        <h2>DAY OF WEEK</h2>
+    <div>
+        <select class="day_of_week" name="" id="uiday_of_week">
+            <option value="" disabled="disabled" selected="selected">Choose a DOW</option>
+            <option>Sunday</option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+        </select>
+    </div>
+        <h2>AIRLINE</h2>
+    <div>
+        <select class="Airline" name="" id="uiAirline">
+            <option value="" disabled="disabled" selected="selected">Choose a Airline</option>
+            <option>AA</option>
+            <option>AS</option>
+        </select>
+    </div>
+        <h2>ORIGIN AIRPORT</h2>
+    <div>
+        <select class="Origin_airport" name="" id="uiorigin_airport">
+            <option value="" disabled="disabled" selected="selected">Choose a OA</option>
+            <option>ABE</option>
+            <option>ABI</option>
+        </select>
+    </div>
+        <h2>DESTINATION AIRPORT</h2>
+    <div>
+        <select class="Destination_airport" name="" id="uidestination_airport">
+            <option value="" disabled="disabled" selected="selected">Choose a DA</option>
+            <option>ABE</option>
+            <option>ABI</option>
+        </select>
+    <div>
+    <h2>SCHEDULED TIME</h2>
+    <input class="Scheduled_time"  type="email" id="uischeduled_time" class="floatLabel" name="Scheduled_time" value="00">
+
+    <h2>DISTANCE</h2>
+    <input class="Distance"  type="email" id="uidistance" class="floatLabel" name="Distance" value="00">
+
+    <h2>ARRIVAL DELAY</h2>
+    <input class="Arrival_delay"  type="email" id="uiarrival_delay" class="floatLabel" name="Arrival_delay" value="00">
+
+    <h2>SCHEDULED_DEP_HOUR</h2>
+    <input class="Scheduled_dep_hour"  type="email" id="uischeduled_dep_hour" class="floatLabel" name="Scheduled_dep_hour" value="00">
+
+    <h2>SCHEDULED_DEP_MIN</h2>
+    <input class="Scheduled_dep_min"  type="email" id="uischeduled_dep_min" class="floatLabel" name="Scheduled_dep_min" value="00">
+
+    <h2>SCHEDULED_ARR_HOUR</h2>
+    <input class="Scheduled_arr_hour"  type="email" id="uischeduled_arr_hour" class="floatLabel" name="Scheduled_arr_hour" value="00">
+
+    <h2>SCHEDULED_ARR_MIN</h2>
+    <input class="Scheduled_arr_min"  type="email" id="uischeduled_arr_min" class="floatLabel" name="Scheduled_arr_min" value="00">
+
+</div>
+	<button class="submit" onclick="onClickedPredictdelay()" type="button">Predict delay</button>
+	<div id="uipredicteddelay" class="result">	<h2></h2> </div>
+</body>
+</html>
